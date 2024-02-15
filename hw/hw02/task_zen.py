@@ -11,7 +11,7 @@
 # 11) Marian2000year
 # 12) ohotass
 # 13) OleksandrArtemenko
-# 14) olexiyko
+# 14) In the face of ambiguity, refuse the temptation to guess.
 # 15) Paoenterprizes
 # 16) sherlock440
 # 17) YuriySlysh
