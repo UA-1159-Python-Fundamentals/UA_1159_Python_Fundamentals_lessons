@@ -8,7 +8,7 @@
 # 8) K4shalot
 # 9) KaterynaManokha
 # 10) majsterslova
-# 11) Marian2000year
+# 11) Unless explicitly silenced.
 # 12) ohotass
 # 13) OleksandrArtemenko
 # 14) In the face of ambiguity, refuse the temptation to guess.
