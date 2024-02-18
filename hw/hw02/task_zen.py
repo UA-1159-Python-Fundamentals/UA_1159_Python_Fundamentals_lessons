@@ -8,7 +8,7 @@
 # 8) Special cases aren't special enough to break the rules.
 # 9) KaterynaManokha
 # 10) majsterslova
-# 11) Unless explicitly silenced.
+# 11) Although practicality beats purity.
 # 12) ohotass
 # 13) OleksandrArtemenko
 # 14) In the face of ambiguity, refuse the temptation to guess.
