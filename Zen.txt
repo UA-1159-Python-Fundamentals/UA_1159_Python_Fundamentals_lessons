@@ -8,17 +8,14 @@
 # 8) K4shalot
 # 9) KaterynaManokha
 # 10) majsterslova
-# 11) Unless explicitly silenced.
+# 11) Marian2000year
 # 12) ohotass
 # 13) OleksandrArtemenko
-# 14) In the face of ambiguity, refuse the temptation to guess.
+# 14) olexiyko
 # 15) Paoenterprizes
-# 16) Although never is often better than *right* now. 
+# 16) Although never is often better than *right* now.
 # 17) YuriySlysh
 # 18) ArtemShld
-# 19) Asidorenko19
-# 20) BasilJaworski
-# 21) BohdanForkutsa
 
 """The Zen of Python, by Tim Peters
 
