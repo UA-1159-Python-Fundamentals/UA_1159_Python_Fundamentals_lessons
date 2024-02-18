@@ -5,7 +5,7 @@
 # 5) Dimichan
 # 6) gawanyn
 # 7) ivanromanuik2014
-# 8) K4shalot
+# 8) Special cases aren't special enough to break the rules.
 # 9) KaterynaManokha
 # 10) majsterslova
 # 11) Unless explicitly silenced.
