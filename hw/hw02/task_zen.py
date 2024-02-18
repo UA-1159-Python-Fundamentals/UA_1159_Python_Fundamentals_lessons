@@ -1,6 +1,6 @@
 # 1) Asidorenko19
 # 2) BasilJaworski
-# 3) BohdanForkutsa
+# 3) Beautiful is better than ugly.
 # 4) DanGromov
 # 5) Dimichan
 # 6) gawanyn
@@ -18,7 +18,7 @@
 # 18) ArtemShld
 # 19) Asidorenko19
 # 20) BasilJaworski
-# 21) BohdanForkutsa
+# 21) Namespaces are one honking great idea -- let's do more of those!
 
 """The Zen of Python, by Tim Peters
 
