@@ -7,7 +7,7 @@
 # 7) ivanromanuik2014
 # 8) Special cases aren't special enough to break the rules.
 # 9) KaterynaManokha
-# 10) majsterslova
+# 10) Errors should never pass silently.
 # 11) Although practicality beats purity.
 # 12) ohotass
 # 13) OleksandrArtemenko
