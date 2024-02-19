@@ -4,7 +4,7 @@
 # 4) DanGromov
 # 5) Dimichan
 # 6) gawanyn
-# 7) ivanromanuik2014
+# 7) Readability counts.
 # 8) Special cases aren't special enough to break the rules.
 # 9) KaterynaManokha
 # 10) majsterslova
