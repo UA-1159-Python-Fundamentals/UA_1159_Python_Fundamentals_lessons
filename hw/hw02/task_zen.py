@@ -3,7 +3,7 @@
 # 3) Beautiful is better than ugly.
 # 4) DanGromov
 # 5) Dimichan
-# 6) gawanyn
+# 6) Sparse is better than dense.
 # 7) ivanromanuik2014
 # 8) Special cases aren't special enough to break the rules.
 # 9) KaterynaManokha
