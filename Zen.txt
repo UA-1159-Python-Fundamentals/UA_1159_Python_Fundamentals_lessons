@@ -7,7 +7,7 @@
 # 7) Readability counts.
 # 8) K4shalot
 # 9) KaterynaManokha
-Errors should never pass silently.
+# 10) majsterslova
 # 11) Marian2000year
 # 12) ohotass
 # 13) OleksandrArtemenko
