@@ -1,21 +1,24 @@
 # 1) Asidorenko19
 # 2) BasilJaworski
-# 3) BohdanForkutsa
+# 3) Beautiful is better than ugly.
 # 4) DanGromov
 # 5) Dimichan
-# 6) gawanyn
-# 7) Readability counts.
-# 8) K4shalot
+# 6) Sparse is better than dense.
+# 7) ivanromanuik2014
+# 8) Special cases aren't special enough to break the rules.
 # 9) KaterynaManokha
-# 10) majsterslova
-# 11) Marian2000year
+# 10) Errors should never pass silently.
+# 11) Although practicality beats purity.
 # 12) ohotass
 # 13) OleksandrArtemenko
-# 14) olexiyko
+# 14) In the face of ambiguity, refuse the temptation to guess.
 # 15) Paoenterprizes
-# 16) Although never is often better than *right* now.
+# 16) sherlock440
 # 17) YuriySlysh
 # 18) ArtemShld
+# 19) Asidorenko19
+# 20) BasilJaworski
+# 21) Namespaces are one honking great idea -- let's do more of those!
 
 """The Zen of Python, by Tim Peters
 
@@ -28,6 +31,7 @@ Sparse is better than dense.
 Readability counts.
 Special cases aren't special enough to break the rules.
 Although practicality beats purity.
+Errors should never pass silently.
 Unless explicitly silenced.
 In the face of ambiguity, refuse the temptation to guess.
 There should be one-- and preferably only one --obvious way to do it.
