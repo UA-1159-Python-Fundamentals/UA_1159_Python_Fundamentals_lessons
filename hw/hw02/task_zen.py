@@ -1,14 +1,14 @@
-# 1) Asidorenko19
+# 1) _The Zen of Python, by Tim Peters____
 # 2) BasilJaworski
-# 3) Beautiful is better than ugly.
+# 3) BohdanForkutsa
 # 4) DanGromov
 # 5) Dimichan
-# 6) Sparse is better than dense.
-# 7) Readability counts.
-# 8) Special cases aren't special enough to break the rules.
+# 6) gawanyn
+# 7) ivanromanuik2014
+# 8) K4shalot
 # 9) KaterynaManokha
-# 10) Errors should never pass silently.
-# 11) Although practicality beats purity.
+# 10) majsterslova
+# 11) Unless explicitly silenced.
 # 12) ohotass
 # 13) OleksandrArtemenko
 # 14) In the face of ambiguity, refuse the temptation to guess.
@@ -18,7 +18,7 @@
 # 18) ArtemShld
 # 19) Asidorenko19
 # 20) BasilJaworski
-# 21) Namespaces are one honking great idea -- let's do more of those!
+# 21) BohdanForkutsa
 
 """The Zen of Python, by Tim Peters
 
