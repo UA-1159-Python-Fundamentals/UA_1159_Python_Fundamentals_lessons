@@ -1,5 +1,5 @@
 # 1) Asidorenko19
-# 2) BasilJaworski
+# 2) 
 # 3) Beautiful is better than ugly.
 # 4) DanGromov
 # 5) Dimichan
@@ -17,7 +17,7 @@
 # 17) YuriySlysh
 # 18) ArtemShld
 # 19) Asidorenko19
-# 20) BasilJaworski
+# 20) If the implementation is easy to explain, it may be a good idea.
 # 21) Namespaces are one honking great idea -- let's do more of those!
 
 """The Zen of Python, by Tim Peters
