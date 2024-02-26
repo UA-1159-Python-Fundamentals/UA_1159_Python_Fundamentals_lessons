@@ -10,7 +10,7 @@
 # 10) majsterslova
 # 11) Although practicality beats purity.
 # 12) ohotass
-# 13) OleksandrArtemenko
+# 13) Unless explicitly silenced.
 # 14) In the face of ambiguity, refuse the temptation to guess.
 # 15) Paoenterprizes
 # 16) Although never is often better than *right* now. 
