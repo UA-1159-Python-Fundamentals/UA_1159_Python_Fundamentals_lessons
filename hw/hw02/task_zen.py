@@ -4,11 +4,7 @@
 # 4) DanGromov
 # 5) Dimichan
 # 6) Sparse is better than dense.
-<<<<<<< HEAD
-# 7) ivanromanuik2014
-=======
 # 7) Readability counts.
->>>>>>> main
 # 8) Special cases aren't special enough to break the rules.
 # 9) KaterynaManokha
 # 10) Errors should never pass silently.
@@ -23,6 +19,8 @@
 # 19) Asidorenko19
 # 20) BasilJaworski
 # 21) Namespaces are one honking great idea -- let's do more of those!
+# 22) Namespaces are one honking great idea -- let's do more of those!""" (yakubovskii)
+
 
 """The Zen of Python, by Tim Peters
 
