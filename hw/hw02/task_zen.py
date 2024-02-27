@@ -16,8 +16,8 @@
 # 16) sherlock440
 # 17) YuriySlysh
 # 18) ArtemShld
-# 19) Asidorenko19
-# 20) BasilJaworski
+# 19) If the implementation is hard to explain, it's a bad idea.
+# 20) Asidorenko19
 # 21) Namespaces are one honking great idea -- let's do more of those!
 
 """The Zen of Python, by Tim Peters
