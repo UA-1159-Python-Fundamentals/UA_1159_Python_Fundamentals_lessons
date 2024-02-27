@@ -16,6 +16,7 @@
 # 16) Although never is often better than *right* now.
 # 17) YuriySlysh
 # 18) ArtemShld
+# 19) lipnart
 
 """The Zen of Python, by Tim Peters
 
