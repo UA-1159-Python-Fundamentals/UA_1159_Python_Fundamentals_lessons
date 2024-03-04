@@ -1,26 +1,4 @@
-# 1) Asidorenko19
-# 2) BasilJaworski
-# 3) BohdanForkutsa
-# 4) DanGromov
-# 5) Dimichan
-# 6) gawanyn
-# 7) ivanromanuik2014
-# 8) K4shalot
-# 9) KaterynaManokha
-# 10) majsterslova
-# 11) Marian2000year
-# 12) ohotass
-# 13) OleksandrArtemenko
-# 14) olexiyko
-t
-# 15) Paoenterprizes
-# 16) Although never is often better than *right* now.
-# 17) YuriySlysh
-# 18) ArtemShld
-# 19) lipnart
-
-
-"""The Zen of Python, by Tim Peters
+zen = """The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -40,5 +18,19 @@ Now is better than never.
 Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
-"""
+Namespaces are one honking great idea -- let's do more of those!"""
+
+def number(zen):
+    b, n, i = 0, 0, 0
+    for word in zen.split(" "):
+        if word.find("better") != -1:
+            b += 1
+        elif word.find("never") != -1:
+            n += 1
+        elif word.find("is") != -1:
+            i += 1
+    return b, n, i
+
+print(f"{number(zen)}\n\n################\n")
+print(f"{zen.upper()}\n\n################\n")
+print(f"{zen.replace("i", "&")}")

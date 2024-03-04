@@ -1,26 +1,4 @@
-# 1) Asidorenko19
-# 2) BasilJaworski
-# 3) BohdanForkutsa
-# 4) DanGromov
-# 5) Dimichan
-# 6) gawanyn
-# 7) ivanromanuik2014
-# 8) K4shalot
-# 9) KaterynaManokha
-# 10) majsterslova
-# 11) Marian2000year
-# 12) ohotass
-# 13) OleksandrArtemenko
-# 14) olexiyko
-t
-# 15) Paoenterprizes
-# 16) Although never is often better than *right* now.
-# 17) YuriySlysh
-# 18) ArtemShld
-# 19) lipnart
-
-
-"""The Zen of Python, by Tim Peters
+philosophy = """The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -31,7 +9,6 @@ Sparse is better than dense.
 Readability counts.
 Special cases aren't special enough to break the rules.
 Although practicality beats purity.
-Errors should never pass silently.
 Unless explicitly silenced.
 In the face of ambiguity, refuse the temptation to guess.
 There should be one-- and preferably only one --obvious way to do it.
@@ -42,3 +19,15 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 """
+
+number_of_occurrences_better = philosophy.count("better")
+number_of_occurrences_never = philosophy.count("never")
+number_of_occurrences_is = philosophy.count("is")
+
+print (number_of_occurrences_better)
+print (number_of_occurrences_never)
+print (number_of_occurrences_is)
+
+print(philosophy.upper())
+
+print(philosophy.replace("i","&"))
