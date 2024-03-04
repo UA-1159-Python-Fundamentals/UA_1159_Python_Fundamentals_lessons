@@ -6,10 +6,10 @@
 # 6) Sparse is better than dense.
 # 7) Readability counts.
 # 8) Special cases aren't special enough to break the rules.
-# 9) KaterynaManokha
+# 9) Although practicality beats purity.
 # 10) Errors should never pass silently.
-# 11) Unless explicitly silenced.
-# 12) ohotass
+# 11) Although practicality beats purity.
+# 12) Errors should never pass silently.
 # 13) Unless explicitly silenced.
 # 14) In the face of ambiguity, refuse the temptation to guess.
 # 15) Paoenterprizes

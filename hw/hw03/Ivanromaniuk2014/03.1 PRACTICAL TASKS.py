@@ -1,26 +1,5 @@
-# 1) Asidorenko19
-# 2) BasilJaworski
-# 3) BohdanForkutsa
-# 4) DanGromov
-# 5) Dimichan
-# 6) gawanyn
-# 7) ivanromanuik2014
-# 8) K4shalot
-# 9) KaterynaManokha
-# 10) majsterslova
-# 11) Marian2000year
-# 12) ohotass
-# 13) OleksandrArtemenko
-# 14) olexiyko
-t
-# 15) Paoenterprizes
-# 16) Although never is often better than *right* now.
-# 17) YuriySlysh
-# 18) ArtemShld
-# 19) lipnart
-
-
-"""The Zen of Python, by Tim Peters
+#Task 1
+zen_of_python = """The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -41,4 +20,22 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
+
 """
+zen_of_python_count_better = zen_of_python.lower().count("better")
+zen_of_python_count_never = zen_of_python.lower().count("never")
+zen_of_python_count_is = zen_of_python.lower().count(" is ")
+
+print(f"Task 1\n\nCount of world 'better' is: {zen_of_python_count_better}")
+print(f"Count of world 'never' is: {zen_of_python_count_never}")
+print(f"count of world 'is' is: {zen_of_python_count_is}")
+
+#Task 2
+
+print(f"\nTask 2 \n\n{zen_of_python.upper()}")
+
+#Task 3
+
+zen_of_python_replace = zen_of_python.replace('i', '&')
+
+print(f"\nTask 3 \n\n{zen_of_python_replace}")
