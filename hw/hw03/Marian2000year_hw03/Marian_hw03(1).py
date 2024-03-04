@@ -1,28 +1,5 @@
-# 1) Asidorenko19
-# 2) BasilJaworski
-# 3) Beautiful is better than ugly.
-# 4) DanGromov
-# 5) Dimichan
-# 6) Sparse is better than dense.
-# 7) Readability counts.
-# 8) Special cases aren't special enough to break the rules.
-# 9) KaterynaManokha
-# 10) Errors should never pass silently.
-# 11) Although practicality beats purity.
-# 12) Errors should never pass silently.
-# 13) Unless explicitly silenced.
-# 14) In the face of ambiguity, refuse the temptation to guess.
-# 15) Paoenterprizes
-# 16) sherlock440
-# 17) YuriySlysh
-# 18) ArtemShld
-# 19) If the implementation is hard to explain, it's a bad idea.
-# 20) Asidorenko19
-# 21) Namespaces are one honking great idea -- let's do more of those!
-# 22) Namespaces are one honking great idea -- let's do more of those!""" (yakubovskii)
-
-
-"""The Zen of Python, by Tim Peters
+philosophy = '''
+The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -43,4 +20,24 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-"""
+'''
+
+################################ Task №1 ###############################
+
+# better_counter = philosophy.count("better")
+# never_counter = philosophy.count("never")
+# is_counter = philosophy.count("is")
+
+# print(f"Word 'better' occures {better_counter} times in philosophy")
+# print(f"Word 'never' occures {never_counter} times in philosophy")
+# print(f"Word 'is' occures {is_counter} times in philosophy")
+
+################################ Task №2 ###############################
+
+# up_philosophy = philosophy.upper()
+# print(up_philosophy)
+
+################################ Task №3 ###############################
+
+# i_to_change = philosophy.replace('i', '&')
+# print(i_to_change)
