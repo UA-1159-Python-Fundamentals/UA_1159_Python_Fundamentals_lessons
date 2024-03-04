@@ -1,27 +1,4 @@
-# 1) Asidorenko19
-# 2) BasilJaworski
-# 3) BohdanForkutsa
-# 4) DanGromov
-# 5) Dimichan
-# 6) gawanyn
-# 7) ivanromanuik2014
-# 8) K4shalot
-# 9) KaterynaManokha
-# 10) majsterslova
-# 11) Marian2000year
-# 12) ohotass
-# 13) OleksandrArtemenko
-# 14) olexiyko
-t
-# 15) Paoenterprizes
-# 16) Although never is often better than *right* now.
-# 17) YuriySlysh
-# 18) ArtemShld
-# 19) lipnart
-
-
-"""The Zen of Python, by Tim Peters
-
+zen = """The Zen of Python, by Tim Peters
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -31,7 +8,6 @@ Sparse is better than dense.
 Readability counts.
 Special cases aren't special enough to break the rules.
 Although practicality beats purity.
-Errors should never pass silently.
 Unless explicitly silenced.
 In the face of ambiguity, refuse the temptation to guess.
 There should be one-- and preferably only one --obvious way to do it.
@@ -40,5 +16,19 @@ Now is better than never.
 Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
-"""
+Namespaces are one honking great idea -- let's do more of those!"""
+
+#task_1
+better_count = zen.count("better")
+is_count = zen.count('is')
+never_count = zen.count('never')
+
+print('Кількість слів better:', better_count)
+print('Кількість слів is:', is_count)
+print('Кількість слів never:', never_count)
+
+#task_2
+print(zen.upper())
+
+#task_3
+zen.replace('i', '&')
