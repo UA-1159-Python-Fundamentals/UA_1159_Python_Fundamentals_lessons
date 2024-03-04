@@ -1,4 +1,4 @@
-# 1) Asidorenko19
+# 1) _The Zen of Python, by Tim Peters____
 # 2) BasilJaworski
 # 3) Beautiful is better than ugly.
 # 4) DanGromov
@@ -43,4 +43,4 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-"""
+
