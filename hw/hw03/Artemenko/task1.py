@@ -1,28 +1,4 @@
-# 1) Asidorenko19
-# 2) BasilJaworski
-# 3) Beautiful is better than ugly.
-# 4) DanGromov
-# 5) Dimichan
-# 6) Sparse is better than dense.
-# 7) Readability counts.
-# 8) Special cases aren't special enough to break the rules.
-# 9) KaterynaManokha
-# 10) Errors should never pass silently.
-# 11) Although practicality beats purity.
-# 12) ohotass
-# 13) Unless explicitly silenced.
-# 14) In the face of ambiguity, refuse the temptation to guess.
-# 15) Paoenterprizes
-# 16) sherlock440
-# 17) YuriySlysh
-# 18) ArtemShld
-# 19) If the implementation is hard to explain, it's a bad idea.
-# 20) Asidorenko19
-# 21) Namespaces are one honking great idea -- let's do more of those!
-# 22) Namespaces are one honking great idea -- let's do more of those!""" (yakubovskii)
-
-
-"""The Zen of Python, by Tim Peters
+py_philosophy = """The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -44,3 +20,16 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 """
+
+count_better = py_philosophy.count("better")
+count_never = py_philosophy.count("never")
+count_is = py_philosophy.count("is")
+py_philosophy_upper = py_philosophy.upper()
+py_philosophy_replaced_i_lower = py_philosophy.replace("i", "&")
+py_philosophy_replaced_i_all = py_philosophy.translate(str.maketrans({"i": "&", "I": "&"}))
+
+print(f"Count of word 'better': {count_better}, count of word 'never': {count_never}, count of word 'is': {count_is}\n"
+      + "\n" + "*" * 100 + "\n")
+print(py_philosophy_upper + "\n" + "*" * 100 + "\n")
+print(py_philosophy_replaced_i_lower + "\n" + "*" * 100 + "\n")
+print(py_philosophy_replaced_i_all + "\n" + "*" * 100 + "\n")
