@@ -2,7 +2,7 @@
 # 2) BasilJaworski
 # 3) Beautiful is better than ugly.
 # 4) DanGromov
-# 5) Dimichan
+# 5) Flat is better than nested.git 
 # 6) Sparse is better than dense.
 # 7) Readability counts.
 # 8) Special cases aren't special enough to break the rules.
