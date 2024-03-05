@@ -1,16 +1,16 @@
-# 1) Asidorenko19
+# 1) _The Zen of Python, by Tim Peters____
 # 2) BasilJaworski
 # 3) Beautiful is better than ugly.
 # 4) DanGromov
-# 5) Dimichan
+# 5) Flat is better than nested.git 
 # 6) Sparse is better than dense.
 # 7) Readability counts.
 # 8) Special cases aren't special enough to break the rules.
-# 9) KaterynaManokha
+# 9) Although practicality beats purity.
 # 10) Errors should never pass silently.
 # 11) Although practicality beats purity.
-# 12) ohotass
-# 13) OleksandrArtemenko
+# 12) Errors should never pass silently.
+# 13) Unless explicitly silenced.
 # 14) In the face of ambiguity, refuse the temptation to guess.
 # 15) Paoenterprizes
 # 16) sherlock440
@@ -19,6 +19,8 @@
 # 19) If the implementation is hard to explain, it's a bad idea.
 # 20) Asidorenko19
 # 21) Namespaces are one honking great idea -- let's do more of those!
+# 22) Namespaces are one honking great idea -- let's do more of those!""" (yakubovskii)
+# 23) Complex is better than complicated. (sctpilg)
 
 """The Zen of Python, by Tim Peters
 
