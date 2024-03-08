@@ -1,30 +1,21 @@
-# 1) _The Zen of Python, by Tim Peters____
+# 1) Asidorenko19
 # 2) BasilJaworski
-# 3) Beautiful is better than ugly.
+# 3) BohdanForkutsa
 # 4) DanGromov
-# 5) Flat is better than nested.git 
-# 6) Sparse is better than dense.
-<<<<<<< HEAD
-# 7) ivanromanuik2014
-=======
+# 5) Dimichan
+# 6) gawanyn
 # 7) Readability counts.
->>>>>>> 056f0c0b5bcf6b2fe206bf08a73e00896b7ebd07
-# 8) Special cases aren't special enough to break the rules.
-# 9) Although practicality beats purity.
-# 10) Errors should never pass silently.
-# 11) Although practicality beats purity.
-# 12) Errors should never pass silently.
-# 13) Unless explicitly silenced.
-# 14) In the face of ambiguity, refuse the temptation to guess.
-# 15) Paoenterprizes
-# 16) sherlock440
+# 8) K4shalot
+# 9) KaterynaManokha
+# 10) majsterslova
+# 11) Marian2000year
+# 12) ohotass
+# 13) OleksandrArtemenko
+# 14) There should be one-- and preferably only one --obvious way to do it.
+# 15) Now is better than never.
+# 16) Although never is often better than *right* now.
 # 17) YuriySlysh
 # 18) ArtemShld
-# 19) If the implementation is hard to explain, it's a bad idea.
-# 20) Asidorenko19
-# 21) Namespaces are one honking great idea -- let's do more of those!
-# 22) Namespaces are one honking great idea -- let's do more of those!""" (yakubovskii)
-
 
 """The Zen of Python, by Tim Peters
 
@@ -37,7 +28,6 @@ Sparse is better than dense.
 Readability counts.
 Special cases aren't special enough to break the rules.
 Although practicality beats purity.
-Errors should never pass silently.
 Unless explicitly silenced.
 In the face of ambiguity, refuse the temptation to guess.
 There should be one-- and preferably only one --obvious way to do it.
@@ -47,4 +37,4 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-
+"""
