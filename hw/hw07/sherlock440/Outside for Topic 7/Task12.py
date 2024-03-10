@@ -1,8 +1,4 @@
-def is_tail(body, tail):
-    if body.endswith(tail):
-        return True
-    else:
-        return False
+is_tail = lambda body, tail: True if body.endswith(tail) else False
 
 print(is_tail("hippo", 'o'))
 print(is_tail("hippo", 'a'))
