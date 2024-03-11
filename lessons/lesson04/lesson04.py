@@ -111,13 +111,13 @@
 # print(f"{a=} {b=}")
 
 
-# l = [1, 2, 3, 4, 5, 6, "7"]
-# print(7 in l)
-# print("7" in l)
-# print(3 in l)
-# print("3" not in l)
-# print("3333" not in "bchsdanc vhfdjncdsjbf27857t69854")
-# print("3333" in "bchsdanc333333 vhfdjncdsjbf27857t69854")
+l = [1, 2, 3, 4, 5, 6, "7"]
+print(7 in l)
+print("7" in l)
+print(3 in l)
+print("3" not in l)
+print("3333" not in "bchsdanc vhfdjncdsjbf27857t69854")
+print("3333" in "bchsdanc333333 vhfdjncdsjbf27857t69854")
 
 
 # d = {1: "11", "2": 22}
