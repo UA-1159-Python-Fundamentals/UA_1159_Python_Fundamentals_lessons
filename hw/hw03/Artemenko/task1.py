@@ -1,23 +1,4 @@
-# 1) Asidorenko19
-# 2) BasilJaworski
-# 3) BohdanForkutsa
-# 4) DanGromov
-# 5) Dimichan
-# 6) gawanyn
-# 7) ivanromanuik2014
-# 8) K4shalot
-# 9) KaterynaManokha
-# 10) majsterslova
-# 11) Marian2000year
-# 12) ohotass
-# 13) OleksandrArtemenko
-# 14) olexiyko
-# 15) Paoenterprizes
-# 16) Although never is often better than *right* now.
-# 17) YuriySlysh
-# 18) ArtemShld
-
-"""The Zen of Python, by Tim Peters
+py_philosophy = """The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -39,3 +20,16 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 """
+
+count_better = py_philosophy.count("better")
+count_never = py_philosophy.count("never")
+count_is = py_philosophy.count("is")
+py_philosophy_upper = py_philosophy.upper()
+py_philosophy_replaced_i_lower = py_philosophy.replace("i", "&")
+py_philosophy_replaced_i_all = py_philosophy.translate(str.maketrans({"i": "&", "I": "&"}))
+
+print(f"Count of word 'better': {count_better}, count of word 'never': {count_never}, count of word 'is': {count_is}\n"
+      + "\n" + "*" * 100 + "\n")
+print(py_philosophy_upper + "\n" + "*" * 100 + "\n")
+print(py_philosophy_replaced_i_lower + "\n" + "*" * 100 + "\n")
+print(py_philosophy_replaced_i_all + "\n" + "*" * 100 + "\n")

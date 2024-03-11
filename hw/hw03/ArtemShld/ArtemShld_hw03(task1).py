@@ -1,24 +1,5 @@
-# 1) Asidorenko19
-# 2) BasilJaworski
-# 3) BohdanForkutsa
-# 4) DanGromov
-# 5) Dimichan
-# 6) gawanyn
-# 7) ivanromanuik2014
-# 8) K4shalot
-# 9) KaterynaManokha
-# 10) majsterslova
-# 11) Marian2000year
-# 12) ohotass
-# 13) OleksandrArtemenko
-# 14) olexiyko
-# 15) Paoenterprizes
-# 16) Although never is often better than *right* now.
-# 17) YuriySlysh
-# 18) ArtemShld
-
-"""The Zen of Python, by Tim Peters
-
+philosophy = '''
+The Zen of Python, by Tim Peters
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -38,4 +19,23 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-"""
+'''
+
+Task 1 
+
+# better_counter = philosophy.count("better")
+# never_counter = philosophy.count("never")
+# is_counter = philosophy.count("is")
+
+# print(f"Word 'better' occures {better_counter} times in philosophy")
+# print(f"Word 'never' occures {never_counter} times in philosophy")
+# print(f"Word 'is' occures {is_counter} times in philosophy")
+Task 2
+
+# up_philosophy = philosophy.upper()
+# print(up_philosophy)
+
+Task 3 
+
+# change_i_to = philosophy.replace('i', '&')
+# print(change_i_to)

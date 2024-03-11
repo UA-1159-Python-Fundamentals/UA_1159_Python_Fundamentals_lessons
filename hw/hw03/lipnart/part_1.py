@@ -1,24 +1,4 @@
-# 1) Asidorenko19
-# 2) BasilJaworski
-# 3) BohdanForkutsa
-# 4) DanGromov
-# 5) Dimichan
-# 6) gawanyn
-# 7) ivanromanuik2014
-# 8) K4shalot
-# 9) KaterynaManokha
-# 10) majsterslova
-# 11) Marian2000year
-# 12) ohotass
-# 13) OleksandrArtemenko
-# 14) olexiyko
-# 15) Paoenterprizes
-# 16) Although never is often better than *right* now.
-# 17) YuriySlysh
-# 18) ArtemShld
-
-"""The Zen of Python, by Tim Peters
-
+zen = """The Zen of Python, by Tim Peters
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -29,7 +9,7 @@ Readability counts.
 Special cases aren't special enough to break the rules.
 Although practicality beats purity.
 Errors should never pass silently.
-Unless explicitly silenced.
+Unless explicitly silenced. 
 In the face of ambiguity, refuse the temptation to guess.
 There should be one-- and preferably only one --obvious way to do it.
 Although that way may not be obvious at first unless you're Dutch.
@@ -37,5 +17,19 @@ Now is better than never.
 Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
-"""
+Namespaces are one honking great idea -- let's do more of those!"""
+
+counter_better = zen.count("better")
+counter_never = zen.count("never")
+counter_is = zen.count("is")
+
+zen = zen.replace("I", "&")
+
+zen = zen.upper()
+
+print(zen)
+
+print(f'In Zen the word "better" occurs {counter_better} times')
+print(f'In Zen the word "never" occurs {counter_never} times')
+print(f'In Zen the word "is" occurs {counter_is} times')
+

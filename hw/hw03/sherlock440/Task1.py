@@ -1,25 +1,4 @@
-# 1) Asidorenko19
-# 2) BasilJaworski
-# 3) BohdanForkutsa
-# 4) DanGromov
-# 5) Dimichan
-# 6) gawanyn
-# 7) ivanromanuik2014
-# 8) K4shalot
-# 9) KaterynaManokha
-# 10) majsterslova
-# 11) Marian2000year
-# 12) ohotass
-# 13) OleksandrArtemenko
-# 14) olexiyko
-# 15) Paoenterprizes
-# 16) Although never is often better than *right* now.
-# 17) YuriySlysh
-# 18) ArtemShld
-
-"""The Zen of Python, by Tim Peters
-
-Beautiful is better than ugly.
+zen = """Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
 Complex is better than complicated.
@@ -39,3 +18,19 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 """
+
+better_num = zen.find('better')
+never_num = zen.find('never')
+is_num = zen.find("is")
+
+# Or I could do aforementioned statements literally inside the following f-string
+print("\nTASK 1\n"
+      f"Number of 'better' word in text is: {better_num}.\n"
+      f"Number of 'never' word in text is: {never_num}.\n"
+      f"Number of 'is' word in text is: {is_num}.\n")
+
+print(f"\n\nTASK 2\n"
+      f"\nHere is your all-uppercased text, you crazy weirdo:\n{zen.upper()}\n\n")
+
+print(f"\n\nTASK 3\n"
+      f"\nHere is your little insurrection, you tricky dude:\n\n{zen.replace('i', '&')}")

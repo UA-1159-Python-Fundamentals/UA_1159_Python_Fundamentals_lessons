@@ -1,24 +1,4 @@
-# 1) Asidorenko19
-# 2) BasilJaworski
-# 3) BohdanForkutsa
-# 4) DanGromov
-# 5) Dimichan
-# 6) gawanyn
-# 7) ivanromanuik2014
-# 8) K4shalot
-# 9) KaterynaManokha
-# 10) majsterslova
-# 11) Marian2000year
-# 12) ohotass
-# 13) OleksandrArtemenko
-# 14) olexiyko
-# 15) Paoenterprizes
-# 16) Although never is often better than *right* now.
-# 17) YuriySlysh
-# 18) ArtemShld
-
-"""The Zen of Python, by Tim Peters
-
+zen_of_python = """The Zen of Python, by Tim Peters
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -39,3 +19,20 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 """
+
+zen_of_python_count_better = zen_of_python.lower().count("better")
+zen_of_python_count_never = zen_of_python.lower().count("never")
+zen_of_python_count_is = zen_of_python.lower().count("is")
+
+print(f"Count of world 'better' is: {zen_of_python_count_better}")
+print(f"count of world 'never' is: {zen_of_python_count_never}")
+print(f"count of world 'is': {zen_of_python_count_is}")
+
+zen_of_python = zen_of_python.upper()
+print(zen_of_python)
+
+i_to_change = zen_of_python.replace('i', '&')
+print(i_to_change)
+
+
+
