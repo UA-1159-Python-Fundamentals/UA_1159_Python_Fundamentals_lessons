@@ -1,0 +1,5 @@
+def solution(number):
+    if number < 0:
+        return 0
+    count_number = [n for n in range(number) if n % 3 == 0 or n % 5 == 0]
+    return sum(count_number)
