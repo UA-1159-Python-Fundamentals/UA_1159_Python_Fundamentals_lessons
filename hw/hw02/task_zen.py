@@ -20,7 +20,7 @@
 # 20) If the implementation is easy to explain, it may be a good idea.
 # 21) Namespaces are one honking great idea -- let's do more of those!
 # 22) Namespaces are one honking great idea -- let's do more of those!""" (yakubovskii)
-
+# 23) Complex is better than complicated. (sctpilg)
 
 """The Zen of Python, by Tim Peters
 
@@ -43,4 +43,4 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-
+"""
