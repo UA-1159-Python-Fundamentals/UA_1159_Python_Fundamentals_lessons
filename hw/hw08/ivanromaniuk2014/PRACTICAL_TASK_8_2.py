@@ -15,16 +15,16 @@ def valid_pasword(psw: str):
     - Maximum length of 16 characters.
     - Must include digits, uppercase and lowercase letters, and the symbols '$#@'.
     """
+    
     symbols = "$#@"
     max_characters = 16
     min_characters = 6
-
 
     if len(psw) >= min_characters and len(psw) < max_characters:
         if any( _ in symbols  for _ in psw) and any ( _ in digits for _ in psw) \
         and any( _ in ascii_uppercase  for _ in psw) and any ( _ in ascii_lowercase for _ in psw):
             return True
-        
     return False
                   
-                          
+if __name__ == "__main__":
+    valid_pasword(input("Enter your password"))              
