@@ -1,0 +1,10 @@
+{
+  "expenses": [
+    {
+      "timestamp": "2024-03-16 16:43:40",
+      "category": "",
+      "amount": 111.0,
+      "currency": "250"
+    }
+  ]
+}
