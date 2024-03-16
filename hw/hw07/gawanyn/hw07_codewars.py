@@ -1,3 +1,4 @@
+#Codewars
 #Task 1 Jenny's secret message
 def greet(name):
     if name == "Johnny":
