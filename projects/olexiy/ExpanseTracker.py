@@ -2,6 +2,7 @@ import json
 from datetime import datetime
 import tkinter as tk
 
+
 def load_expenses():
     try:
         with open('expenses.json', 'r') as file:
@@ -43,7 +44,7 @@ def view_expenses():
     expenses = expenses_data['expenses']
 
     if not expenses:
-        label=tk.Label(root,text="Витрат немає")
+        label = tk.Label(root, text="Витрат немає")
         label.pack()
 
     else:
@@ -52,30 +53,30 @@ def view_expenses():
         for i, expense in enumerate(expenses):
             print(f"{i + 1}. {expense['timestamp']} - {expense['category']}: {expense['amount']} {expense['currency']}")
 
-            # Покажіть у віджеті Label інформацію про витрати
-            label = tk.Label(root, text=f"{i + 1}. {expense['timestamp']} - {expense['category']}: {expense['amount']} {expense['currency']}")
+            label = tk.Label(root,
+                             text=f"{i + 1}. {expense['timestamp']} - {expense['category']}: {expense['amount']} {expense['currency']}")
             label.pack()
+
+
 def delete_expense():
-    # Створити нове вікно Tkinter для вводу індексу
     delete_window = tk.Toplevel()
     delete_window.title("Видалення витрати")
 
-    # Додати мітку та поле введення для індексу
     label_index = tk.Label(delete_window, text="Введіть індекс витрати для видалення:")
     label_index.pack()
 
     entry_index = tk.Entry(delete_window)
     entry_index.pack()
 
-    # Створити функцію, яка виконується при натисканні кнопки видалення
+  
     def confirm_delete():
-        index = int(entry_index.get()) - 1  # Відняти 1, так як індекси починаються з 0
+        index = int(entry_index.get()) - 1
         delete_expense_by_index(index)
-        delete_window.destroy()  # Закрити вікно після видалення
+        delete_window.destroy()
 
-    # Додати кнопку для підтвердження видалення
     button_confirm = tk.Button(delete_window, text="Підтвердити видалення", command=confirm_delete)
     button_confirm.pack()
+
 
 def delete_expense_by_index(index):
     expenses_data = load_expenses()
@@ -88,6 +89,7 @@ def delete_expense_by_index(index):
         print(f"Витрата видалена: {deleted_expense}")
     else:
         print("Невірний індекс витрати. Спробуйте ще раз.")
+
 
 root = tk.Tk()
 root.title("Expense Tracker")
@@ -120,10 +122,10 @@ entry_currency.grid(row=2, column=1, padx=5, pady=5)
 button_add = tk.Button(root, text="Додати витрату", command=add_expense)
 button_add.pack(pady=5)
 
-button_delete = tk.Button(root, text="Видалити витрату",command=delete_expense)
+button_delete = tk.Button(root, text="Видалити витрату", command=delete_expense)
 button_delete.pack(pady=5)
 
-button_view = tk.Button(root, text="Переглянути витрати",command=view_expenses)
+button_view = tk.Button(root, text="Переглянути витрати", command=view_expenses)
 button_view.pack(pady=5)
 
 button_exit = tk.Button(root, text="Вийти", command=root.quit)
