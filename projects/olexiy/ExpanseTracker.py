@@ -1,6 +1,7 @@
 import json
 from datetime import datetime
 import tkinter as tk
+import matplotlib.pyplot as plt
 
 
 def load_expenses():
@@ -68,7 +69,6 @@ def delete_expense():
     entry_index = tk.Entry(delete_window)
     entry_index.pack()
 
-  
     def confirm_delete():
         index = int(entry_index.get()) - 1
         delete_expense_by_index(index)
@@ -91,9 +91,34 @@ def delete_expense_by_index(index):
         print("Невірний індекс витрати. Спробуйте ще раз.")
 
 
+def diagram():
+    expenses_data = load_expenses()
+    expenses = expenses_data['expenses']
+    categories = {}
+    total_expense = 0
+
+    for expense in expenses:
+        category = expense['category']
+        amount = expense['amount']
+        total_expense += amount
+        if category in categories:
+            categories[category] += amount
+        else:
+            categories[category] = amount
+
+    labels_ = categories.keys()
+    sizes = [amount / total_expense for amount in categories.values()]
+
+    plt.figure(figsize=(8, 8))
+    plt.pie(sizes, labels=labels_, autopct='%1.1f%%', startangle=140)
+    plt.axis('equal')
+
+    plt.title('Доля витрат за категоріями')
+
+    plt.show()
 root = tk.Tk()
 root.title("Expense Tracker")
-root.geometry("500x400")
+root.geometry("600x600")
 
 label_title = tk.Label(root, text="Expense Tracker", font=("Helvetica", 16))
 label_title.pack(pady=10)
@@ -126,6 +151,9 @@ button_delete = tk.Button(root, text="Видалити витрату", command=
 button_delete.pack(pady=5)
 
 button_view = tk.Button(root, text="Переглянути витрати", command=view_expenses)
+button_view.pack(pady=5)
+
+button_view = tk.Button(root, text="Діаграма витрат", command=diagram)
 button_view.pack(pady=5)
 
 button_exit = tk.Button(root, text="Вийти", command=root.quit)
