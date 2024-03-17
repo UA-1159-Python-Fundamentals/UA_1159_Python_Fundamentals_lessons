@@ -3,7 +3,6 @@ from datetime import datetime
 import tkinter as tk
 import matplotlib.pyplot as plt
 
-
 def load_expenses():
     try:
         with open('expenses.json', 'r') as file:
@@ -11,13 +10,17 @@ def load_expenses():
     except FileNotFoundError:
         return {'expenses': []}
 
-
 def save_expenses(data):
     with open('expenses.json', 'w') as file:
         json.dump(data, file, indent=2)
 
-
 def add_expense():
+    label_category.pack()
+    entry_category.pack()
+    label_amount.pack()
+    entry_amount.pack()
+    label_currency.pack()
+    entry_currency.pack()
     category = entry_category.get()
     amount = float(entry_amount.get())
     currency = entry_currency.get()
@@ -37,7 +40,8 @@ def add_expense():
     expenses.append(expense)
     expenses_data['expenses'] = expenses
     save_expenses(expenses_data)
-    print("        ---Витрата успішно додана.---")
+    label = tk.Label(root, text="Витрата успішно додана!")
+    label.pack()
 
 
 def view_expenses():
@@ -52,12 +56,8 @@ def view_expenses():
         label = tk.Label(root, text="***Історія витрат***")
         label.pack()
         for i, expense in enumerate(expenses):
-            print(f"{i + 1}. {expense['timestamp']} - {expense['category']}: {expense['amount']} {expense['currency']}")
-
-            label = tk.Label(root,
-                             text=f"{i + 1}. {expense['timestamp']} - {expense['category']}: {expense['amount']} {expense['currency']}")
+            label = tk.Label(root, text=f"{i + 1}. {expense['timestamp']} - {expense['category']}: {expense['amount']} {expense['currency']}")
             label.pack()
-
 
 def delete_expense():
     delete_window = tk.Toplevel()
@@ -77,7 +77,6 @@ def delete_expense():
     button_confirm = tk.Button(delete_window, text="Підтвердити видалення", command=confirm_delete)
     button_confirm.pack()
 
-
 def delete_expense_by_index(index):
     expenses_data = load_expenses()
     expenses = expenses_data['expenses']
@@ -89,7 +88,6 @@ def delete_expense_by_index(index):
         print(f"Витрата видалена: {deleted_expense}")
     else:
         print("Невірний індекс витрати. Спробуйте ще раз.")
-
 
 def diagram():
     expenses_data = load_expenses()
@@ -112,10 +110,32 @@ def diagram():
     plt.figure(figsize=(8, 8))
     plt.pie(sizes, labels=labels_, autopct='%1.1f%%', startangle=140)
     plt.axis('equal')
-
     plt.title('Доля витрат за категоріями')
-
     plt.show()
+
+def authenticate():
+    entered_login = entry_login.get()
+    entered_password = entry_password.get()
+
+    if entered_password == "123" and entered_login == "olexiy":
+        label_auth_status.config(text="Ви увійшли!", fg="green")
+        label_login.grid_forget()
+        entry_login.grid_forget()
+        label_password.grid_forget()
+        entry_password.grid_forget()
+        button_enter.pack_forget()
+        label_authentification.pack_forget()
+
+        # Показати інші елементи
+
+        button_add.pack()
+        button_delete.pack()
+        button_view.pack()
+        button_diagram.pack()
+        button_exit.pack()
+    else:
+        label_auth_status.config(text="Пароль або логін не вірний!", fg="red")
+
 root = tk.Tk()
 root.title("Expense Tracker")
 root.geometry("600x600")
@@ -123,40 +143,41 @@ root.geometry("600x600")
 label_title = tk.Label(root, text="Expense Tracker", font=("Helvetica", 16))
 label_title.pack(pady=10)
 
+label_authentification = tk.Label(root,text="Authentification",font=("Helvetica", 16))
+label_authentification.pack(pady=10)
+
 frame_input = tk.Frame(root)
 frame_input.pack(pady=5)
 
+label_login = tk.Label(frame_input, text="Ваш логін:")
+label_login.grid(row=0, column=0, padx=5, pady=5)
+
+entry_login = tk.Entry(frame_input)
+entry_login.grid(row=0, column=1, padx=5, pady=5)
+
+label_password = tk.Label(frame_input, text="Ваш пароль:")
+label_password.grid(row=1, column=0, padx=5, pady=5)
+
+entry_password = tk.Entry(frame_input)
+entry_password.grid(row=1, column=1, padx=5, pady=5)
+
+button_enter = tk.Button(root, text="Увійти", command=authenticate)
+button_enter.pack()
+
+label_auth_status = tk.Label(root, text="")
+label_auth_status.pack(pady=10)
+
 label_category = tk.Label(frame_input, text="Категорія витрати:")
-label_category.grid(row=0, column=0, padx=5, pady=5)
-
 entry_category = tk.Entry(frame_input)
-entry_category.grid(row=0, column=1, padx=5, pady=5)
-
 label_amount = tk.Label(frame_input, text="Сума витрати:")
-label_amount.grid(row=1, column=0, padx=5, pady=5)
-
 entry_amount = tk.Entry(frame_input)
-entry_amount.grid(row=1, column=1, padx=5, pady=5)
-
 label_currency = tk.Label(frame_input, text="Валюта:")
-label_currency.grid(row=2, column=0, padx=5, pady=5)
-
 entry_currency = tk.Entry(frame_input)
-entry_currency.grid(row=2, column=1, padx=5, pady=5)
 
 button_add = tk.Button(root, text="Додати витрату", command=add_expense)
-button_add.pack(pady=5)
-
 button_delete = tk.Button(root, text="Видалити витрату", command=delete_expense)
-button_delete.pack(pady=5)
-
 button_view = tk.Button(root, text="Переглянути витрати", command=view_expenses)
-button_view.pack(pady=5)
-
-button_view = tk.Button(root, text="Діаграма витрат", command=diagram)
-button_view.pack(pady=5)
-
+button_diagram = tk.Button(root, text="Діаграма витрат", command=diagram)
 button_exit = tk.Button(root, text="Вийти", command=root.quit)
-button_exit.pack(pady=5)
 
 root.mainloop()
