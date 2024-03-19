@@ -2,19 +2,24 @@ import json
 from datetime import datetime
 import tkinter as tk
 import matplotlib.pyplot as plt
-
+import os
 
 
 def load_expenses():
     try:
-        with open('expenses.json', 'r') as file:
+        directory = '/Users/oleksiishumylo/github/UA_1159_Python_Fundamentals_lessons/projects/olexiy'
+        with open(os.path.join(directory, 'expenses.json'), 'r') as file:
             return json.load(file)
     except FileNotFoundError:
         return {'expenses': []}
 
 def save_expenses(data):
-    with open('expenses.json', 'w') as file:
-        json.dump(data, file, indent=2)
+    try:
+        directory = '/Users/oleksiishumylo/github/UA_1159_Python_Fundamentals_lessons/projects/olexiy'
+        with open(os.path.join(directory, 'expenses.json'), 'w') as file:
+            json.dump(data, file, indent=2)
+    except Exception as e:
+        print("Failed to save expenses data:", e)
 
 def add_expense():
     label_category.pack()
@@ -142,15 +147,19 @@ def authenticate():
 
 def load_registration_data():
     try:
-        with open('registration.json', 'r') as file:
+        with open(os.path.join('/Users/oleksiishumylo/github/UA_1159_Python_Fundamentals_lessons/projects/olexiy', 'registration.json'), 'r') as file:
             data = json.load(file)
             return data.get('registration', [])
     except FileNotFoundError:
         return []
-
+    
 def save_registration_data(data):
-    with open('registration.json', 'w') as file:
-        json.dump({'registration': data}, file, indent=2)
+    try:
+        directory = '/Users/oleksiishumylo/github/UA_1159_Python_Fundamentals_lessons/projects/olexiy'
+        with open(os.path.join(directory, 'registration.json'), 'w') as file:
+            json.dump({'registration': data}, file, indent=2)
+    except Exception as e:
+        print("Failed to save registration data:", e)
 
 
 def registration():

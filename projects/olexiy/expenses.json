@@ -1,3 +1,10 @@
 {
-  "expenses": []
+  "expenses": [
+    {
+      "timestamp": "2024-03-19 21:15:48",
+      "category": "car",
+      "amount": 56.0,
+      "currency": "usd"
+    }
+  ]
 }
