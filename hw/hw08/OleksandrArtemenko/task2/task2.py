@@ -9,4 +9,4 @@ def password_validator():
     return False
 
 
-# print(password_validator())
+print(password_validator())
