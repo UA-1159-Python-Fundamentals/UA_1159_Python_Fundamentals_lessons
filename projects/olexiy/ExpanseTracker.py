@@ -113,28 +113,61 @@ def diagram():
     plt.title('Доля витрат за категоріями')
     plt.show()
 
+
 def authenticate():
+    login_data = load_registration_data()
     entered_login = entry_login.get()
     entered_password = entry_password.get()
 
-    if entered_password == "123" and entered_login == "olexiy":
-        label_auth_status.config(text="Ви увійшли!", fg="green")
-        label_login.grid_forget()
-        entry_login.grid_forget()
-        label_password.grid_forget()
-        entry_password.grid_forget()
-        button_enter.pack_forget()
-        label_authentification.pack_forget()
+    for user in login_data:
+        if user['login'] == entered_login and user['password'] == entered_password:
+            label_auth_status.config(text="Ви увійшли!", fg="green")
+            label_login.grid_forget()
+            entry_login.grid_forget()
+            label_password.grid_forget()
+            entry_password.grid_forget()
+            button_register.pack_forget()
+            button_enter.pack_forget()
+            label_authentification.pack_forget()
+            button_add.pack()
+            button_delete.pack()
+            button_view.pack()
+            button_diagram.pack()
+            button_exit.pack()
+            return
+    label_auth_status.config(text="Пароль або логін не вірний!", fg="red")
 
-        # Показати інші елементи
 
-        button_add.pack()
-        button_delete.pack()
-        button_view.pack()
-        button_diagram.pack()
-        button_exit.pack()
-    else:
-        label_auth_status.config(text="Пароль або логін не вірний!", fg="red")
+def load_registration_data():
+    try:
+        with open('registration.json', 'r') as file:
+            data = json.load(file)
+            return data.get('registration', [])
+    except FileNotFoundError:
+        return []
+
+def save_registration_data(data):
+    with open('registration.json', 'w') as file:
+        json.dump({'registration': data}, file, indent=2)
+
+
+def registration():
+    register_data = load_registration_data()
+    login = entry_login.get()
+    password = entry_password.get()
+
+    registration = {
+        'login': login,
+        'password': password,
+    }
+
+    register_data.append(registration)
+
+    save_registration_data(register_data)
+    label = tk.Label(root, text="Ви успішно зареєструвалися!", fg="green")
+    label.pack()
+
+
 
 root = tk.Tk()
 root.title("Expense Tracker")
@@ -163,6 +196,9 @@ entry_password.grid(row=1, column=1, padx=5, pady=5)
 
 button_enter = tk.Button(root, text="Увійти", command=authenticate)
 button_enter.pack()
+
+button_register = tk.Button(root, text="Зареєструватися", command=registration)
+button_register.pack()
 
 label_auth_status = tk.Label(root, text="")
 label_auth_status.pack(pady=10)
