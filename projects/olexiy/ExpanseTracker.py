@@ -2,11 +2,8 @@ import json
 from datetime import datetime
 import tkinter as tk
 import matplotlib.pyplot as plt
-import os
 
-BASE_DIR = '/Users/oleksiishumylo/github/UA_1159_Python_Fundamentals_lessons/'
-REGISTRATION_FILE = os.path.join(BASE_DIR, 'registration.json')
-EXPENSES_FILE = os.path.join(BASE_DIR, 'projects', 'olexiy', 'expenses.json')
+
 
 def load_expenses():
     try:
