@@ -21,7 +21,8 @@ def triangle_area(side1, side2, side3):
     existence of a triangle (returns None if does not exist)
     """
     if side1 + side2 > side3 and side1 + side3 > side2 and side2 + side3 > side1:
-        return round(0.5 * (side1 + side2 + side3), 2)
+        s = 0.5 * (side1 + side2 + side3)
+        return round(math.sqrt(s * (s - side1) * (s - side2) * (s - side3)), 2)
     return None
 
 
