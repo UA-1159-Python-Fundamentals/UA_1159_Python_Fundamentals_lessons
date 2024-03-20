@@ -1,5 +1,7 @@
 
 def large_number(num1, num2):
+    """Hi. Function return the largest number."""
+    
     if num1 > num2:
         return num1
     elif num2 > num1:
