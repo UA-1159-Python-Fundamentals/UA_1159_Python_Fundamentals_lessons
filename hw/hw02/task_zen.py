@@ -4,11 +4,7 @@
 # 4) DanGromov
 # 5) Flat is better than nested.git 
 # 6) Sparse is better than dense.
-<<<<<<< HEAD
-# 7) ivanromanuik2014
-=======
 # 7) Readability counts.
->>>>>>> 056f0c0b5bcf6b2fe206bf08a73e00896b7ebd07
 # 8) Special cases aren't special enough to break the rules.
 # 9) Although practicality beats purity.
 # 10) Errors should never pass silently.
@@ -47,4 +43,3 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-
