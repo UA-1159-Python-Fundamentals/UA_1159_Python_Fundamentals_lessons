@@ -1,48 +1,34 @@
-class Animal:
-    def __init__(self, name, species, legs):
-        self.name = name
-        self.species = species
-        self.legs = legs
-    
-    def make_sound(self):
-        pass
-    
-class Mammal(Animal):
-    def __init__(self, name, species, legs):
-        super().__init__(name, species, legs)
+class BankAccount:
+    def __init__(self, account_number, account_holder, balance = 0.0):
+        self.__account_number = account_number
+        self.__account_holder = account_holder
+        self.__balance = balance
 
-    def give_birth(self):
-        return "Giving birth"
-    
-    def make_sound(self):
-        return "Roar"
-    
-class Bird(Animal):
-    def __init__(self, name, species, legs):
-        super().__init__(name, species, legs)
+    @property
+    def account_holder(self):
+        return print(self.__account_holder)
 
-    def lay_eggs(self):
-        return "Laying eggs"
-    
-    def make_sound(self):
-        return "Squawk"
-    
-class Reptile(Animal):
-    def __init__(self, name, species, legs):
-        super().__init__(name, species, legs)
+    def deposit(self, amount):
+        self.__balance += amount
 
-    def shed_skin(self):
-        return "Shdding skin"
-    
-    def make_sound(self):
-        return "Hiss"
-    
-lion = Mammal("Simba", "Lion", 4)
-print(lion.name, lion.species, lion.legs)
-print(lion.make_sound())
-print(lion.give_birth())
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+        else:
+            print("Insufficient funds")
 
-parrot = Bird("Polly", "Parrot", 2)
-print(parrot.name, parrot.species, parrot.legs)
-print(parrot.make_sound())
-print(parrot.lay_eggs())
+    def check_balance(self):
+        return self.__balance
+    
+
+    
+# account = BankAccount("123456789", "John Wick", 100)
+
+# print("Account_holder:", account.account_holder())
+# print("Balance: ", account.check_balance())
+
+# account.deposit(50)
+# print("Balance after deposit: ", account.check_balance())
+
+# account.withdraw(30)
+# print("Balance after withdeaw: ", account.check_balance())
