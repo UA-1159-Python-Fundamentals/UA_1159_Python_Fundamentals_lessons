@@ -1,77 +1,85 @@
-# #Task 1
-# class Polygon:
-#     def __init__(self, sides):
-#         self.sides = sides
+#Task 1 Ball-super-ball
 
-# class Rectangle(Polygon):
-#     def __init__(self, length, width):
-#         super().__init__([length, width])
+class Ball(object):
+    # your code goes here
+    def __init__ (self, ball_type = "regular"):
+        self.ball_type = ball_type
 
-#     def calculate_area(self):
-#         length, width = self.sides
-#         return length * width
+#Task 2 Color-ghost
+        
+import random
 
+class Ghost(object):
+    def __init__(self):
+        colors = ["white", "yellow", "purple", "red"]
+        self.color = colors[random.randint(0, len(colors) - 1)]
 
-# length = float(input("Enter length of the rectangle: "))
-# width = float(input("Enter width of the rectangle: "))
-# rectangle = Rectangle(length, width)
-
-# print("Area of the rectangle:", rectangle.calculate_area())
-
-# #Task 2
-# class Human:
-#     def __init__(self, name):
-#         self.name = name
-    
-#     def welcome_message(self):
-#         return f"Welcome, {self.name}!"
-    
-#     @classmethod
-#     def species_info(cls):
-#         return "This is a species of Homosapiens."
-    
-#     @staticmethod
-#     def arbitrary_message():
-#         return "This is a static method returning an arbitrary message."
-    
-#Task 3
-
-class Employee:
-
-    total_employees = 0
-
-    def __init__(self, name, salary):
+#Task 3 Basic-subclasses-Adam-and-Eve
+        
+class Human:
+    def __init__(self, name):
         self.name = name
-        self.salary = salary
-        Employee.total_employees += 1
+        
+class Man(Human):
+    def __init__(self, name):
+        super().__init__(name)
+        
+class Woman(Human):
+    def __init__(self, name):
+        super().__init__(name)
+        
+class God:
+    def __init__(self):
+        self.paradise = self.create()
 
-    def display_employee_info(self):
-        print(f"Name: {self.name}, Salary: {self.salary}")
+    def create(self):
+        adam = Man("Adam")
+        eve = Woman("Eve")
+        return [adam, eve]
+    
+    def __getitem__(self, index):
+        return self.paradise[index]
+    
+    def __len__(self):
+        return len(self.paradise)
+    
+#Task 4 Classy-classes
+    
+class Person:
+    def __init__(self, name, age):
+        self.info = f"{name}s age is {age}"
 
-    @classmethod
-    def display_total_employees(cls):
-        print(f"Total number of employees: {cls.total_employees}")
+#Task 5 Building Spheres
 
-    @classmethod
-    def get_class_info(cls):
-        print(f"Base classes: {cls.__base__}")
-        print(f"Class namespace: {cls.__dict__}")
-        print(f"Class name: {cls.__name__}")
-        print(f"Module name: {cls.__module__}")
-        print(f"Documentation: {cls.__doc__}")
+import math
 
-# Example usage:
-employee1 = Employee("John", 50000)
-employee2 = Employee("Alice", 60000)
-employee3 = Employee("Max", 100000)
+class Sphere(object):
+    def __init__(self, radius, mass):
+        self.radius = radius
+        self.mass = mass
+        
+    def get_radius(self):
+        return self.radius
+    
+    def get_mass(self):
+        return self.mass
+    
+    def get_volume(self):
+        volume = (4/3) * math.pi * self.radius ** 3
+        return round(volume, 5)
+    
+    def get_surface_area(self):
+        surface_area = 4 * math.pi * self.radius ** 2
+        return round(surface_area, 5)
+    
+    def get_density(self):
+        density = self.mass / self.get_volume()
+        return round(density, 5)
+    
+#Task 6 Dynamic Classes
+    
+def class_name_changer(cls, new_name):
+    if not new_name[0].isupper() or not new_name.isalnum():
+        raise ValueError("New class name must start with an uppercase letter and contain only alphanumeric characters.")
 
-# Display information about each employee
-employee1.display_employee_info()
-employee2.display_employee_info()
-employee3.display_employee_info()
-
-# Display total number of employees
-Employee.display_total_employees()
-
-# Display class information
-Employee.get_class_info()
+    cls.__name__ = new_name

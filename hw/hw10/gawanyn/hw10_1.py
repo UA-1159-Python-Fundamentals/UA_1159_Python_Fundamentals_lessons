@@ -1,38 +1,38 @@
-# #Task 1
-# class Polygon:
-#     def __init__(self, sides):
-#         self.sides = sides
+#Task 1
+class Polygon:
+    def __init__(self, sides):
+        self.sides = sides
 
-# class Rectangle(Polygon):
-#     def __init__(self, length, width):
-#         super().__init__([length, width])
+class Rectangle(Polygon):
+    def __init__(self, length, width):
+        super().__init__([length, width])
 
-#     def calculate_area(self):
-#         length, width = self.sides
-#         return length * width
+    def calculate_area(self):
+        length, width = self.sides
+        return length * width
 
 
-# length = float(input("Enter length of the rectangle: "))
-# width = float(input("Enter width of the rectangle: "))
-# rectangle = Rectangle(length, width)
+length = float(input("Enter length of the rectangle: "))
+width = float(input("Enter width of the rectangle: "))
+rectangle = Rectangle(length, width)
 
-# print("Area of the rectangle:", rectangle.calculate_area())
+print("Area of the rectangle:", rectangle.calculate_area())
 
-# #Task 2
-# class Human:
-#     def __init__(self, name):
-#         self.name = name
+#Task 2
+class Human:
+    def __init__(self, name):
+        self.name = name
     
-#     def welcome_message(self):
-#         return f"Welcome, {self.name}!"
+    def welcome_message(self):
+        return f"Welcome, {self.name}!"
     
-#     @classmethod
-#     def species_info(cls):
-#         return "This is a species of Homosapiens."
+    @classmethod
+    def species_info(cls):
+        return "This is a species of Homosapiens."
     
-#     @staticmethod
-#     def arbitrary_message():
-#         return "This is a static method returning an arbitrary message."
+    @staticmethod
+    def arbitrary_message():
+        return "This is a static method returning an arbitrary message."
     
 #Task 3
 
