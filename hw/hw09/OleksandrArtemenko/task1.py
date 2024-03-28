@@ -10,11 +10,10 @@ def guessing_game():
     unsuccessful_guesses = []
 
     print(f"Welcome to the guessing game. You have {max_tries} to guess the number from {low_range} to {high_range}.")
-    number_to_guess = randint(low_range, high_range + 1)
+    number_to_guess = randint(low_range, high_range)
     user_input = 0
 
     while player_tries < max_tries and game_continues:
-        print(number_to_guess)
 
         if len(unsuccessful_guesses) != 0:
             print(f"Past guesses: {unsuccessful_guesses}.")
