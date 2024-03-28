@@ -2,26 +2,16 @@ from random import choices
 from string import ascii_letters, digits
 
 def check(login):
-  
-    login = login.lower()
-    role, id_part = "", ""
-    separators = ["-id", "id", "-"]
-
-    for separator in separators:
-      parts = login.split(separator)
-      if len(parts) == 2:
-        role, id_part = parts
-        break
-
-    if role not in ("admin", "employee"):
-      raise ValueError(f"incorrect login '{login}'")
-
     try:
-      int(id_part)  # Check if the id part is a valid integer
-    except ValueError:
-      return f"incorrect login '{login}'"
+        str(login)
 
-    return True
+        if "-" in login or "id" in login:
+            return True
+        else:
+            raise ValueError(f"incorrect login '{login}'")
+    except:
+        raise ValueError(f"incorrect login '{login}'")
+
 
 letters_and_digits = choices(ascii_letters, k=5)
 letters_and_digits.extend(choices(digits, k=5))
