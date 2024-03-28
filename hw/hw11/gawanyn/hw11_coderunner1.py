@@ -19,12 +19,11 @@ def check(login):
     try:
       int(id_part)  # Check if the id part is a valid integer
     except ValueError:
-      raise ValueError(f"incorrect login '{login}'")
+      return f"incorrect login '{login}'"
 
     return True
 
 letters_and_digits = choices(ascii_letters, k=5)
-print(letters_and_digits)
 letters_and_digits.extend(choices(digits, k=5))
 
 incorect_login = ''.join(letters_and_digits)
