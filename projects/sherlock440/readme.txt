@@ -1,4 +1,5 @@
-!!! All paths in the app were made for macOS/Linux, so in Windows there should be some other slashes. I could use
+!!! All paths in the app were made for macOS/Linux, so on Windows there should be some other slashes. I could use
+
 something like "import platform" to make different paths depending on the OS, but I guess it's an overengineering in
 terms of the project
 
