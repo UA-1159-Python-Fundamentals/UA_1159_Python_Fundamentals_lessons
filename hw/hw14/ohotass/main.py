@@ -1,6 +1,6 @@
 import unittest
-from functions import greeting_by_name, get_symbol_position, merge
-from functions_with_errors import greeting_by_name as greeting_by_name_err, \
+from hw.hw14.ohotass.functions import greeting_by_name, get_symbol_position, merge
+from hw.hw14.ohotass.functions_with_errors import greeting_by_name as greeting_by_name_err, \
     get_symbol_position as get_symbol_position_err, merge as merge_err
 
 
