@@ -1,0 +1,5 @@
+{'time': '2024-04-04 18:22:42.697364', 'decks played': 1, 'hands played': 2, 'starting bank': 1000.0, 'closing bank': 1300.0, 'roi': '30.0%'}
+{'time': '2024-04-04 18:24:56.987470', 'decks played': 2, 'hands played': 3, 'starting bank': 1000.0, 'closing bank': 700.0, 'roi': '-30.0%'}
+{'time': '2024-04-04 18:29:16.714265', 'decks played': 3, 'hands played': 2, 'starting bank': 1000.0, 'closing bank': 1800.0, 'roi': '80.0%'}
+{'time': '2024-04-04 19:17:09.557587', 'decks played': 2, 'hands played': 3, 'starting bank': 1000.0, 'closing bank': 400.0, 'roi': '-60.0%'}
+{'time': '2024-04-04 19:27:53.663373', 'decks played': 3, 'hands played': 2, 'starting bank': 1000.0, 'closing bank': 1400.0, 'roi': '40.0%'}
