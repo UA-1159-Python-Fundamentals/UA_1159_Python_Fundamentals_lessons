@@ -20,43 +20,40 @@ last_message_font_size = 15
 font_size = 60
 random_number = random.randint(1, 100)
 
-def guess_the_number():
-    pass
-    for attempt in range(1, 11):
-        user_guess = int(input_string)
-        if user_guess < random_number:
-            last_message = "Too low! Try again."
-        elif user_guess > random_number:
-            last_message = "Too high! Try again."
-        else:
-            last_message = "Congratulations! You guessed the number in {} attempts.".format(attempt)
-            return last_message
-    last_message = "Sorry, you didn't guess the number. It was {}.".format(random_number)
-    return last_message
 
 input_string = ""
 last_message = ""
 last_message = "I'm thinking of a number between 1 and 100."
-while not DONE:
+attempts = 0
+MAX_ATTEMPTS = 10
+
+while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            DONE = True
+            pygame.quit()
+            sys.exit()
         elif event.type == pygame.KEYDOWN:
-            if event.unicode.isdigit():
-                input_string += event.unicode 
+            if event.key == pygame.K_RETURN:
+                user_guess = int(input_string)
+                attempts += 1
+                
+                if user_guess < random_number:
+                    last_message = "Too low! Try again."
+                elif user_guess > random_number:
+                    last_message = "Too high! Try again."
+                elif user_guess == random_number:
+                    last_message = "Win! You guessed the number in {} attempts.".format(attempts)
+                else:
+                    last_message = "Sorry, you didn't guess the number. It was {}.".format(random_number)
+                
+                if attempts >= MAX_ATTEMPTS:
+                    last_message = "You've used all your attempts. The number was {}.".format(random_number)
+                    pygame.time.wait(3000)  
+                    
             elif event.key == pygame.K_BACKSPACE:
                 input_string = input_string[:-1]
-            elif event.key == pygame.K_RETURN:
-                for attempt in range(1, 11,):
-                    user_guess = int(input_string)
-                    if user_guess < random_number:
-                        last_message = "Too low! Try again."
-                    elif user_guess > random_number:
-                        last_message = "Too high! Try again."
-                    elif user_guess == random_number:
-                        last_message = "WIN! You guessed the number in {} attempts.".format(attempt)
-                    else:
-                        last_message = "Sorry, you didn't guess the number. It was {}.".format(random_number)          
+            elif event.unicode.isdigit():
+                input_string += event.unicode
 
     gameDisplay.fill(COLOR)
     font_size = 60  
